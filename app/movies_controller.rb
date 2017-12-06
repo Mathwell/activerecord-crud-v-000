@@ -60,8 +60,7 @@ def can_find_using_where_clause_and_be_sorted
   #  m[title]
   #end
   movie=Movie.where(release_date=2002)
-  #
-  .map {|m| m[title]}
+  #  .map {|m| m[title]}
 end
 
 def can_be_found_updated_and_saved
