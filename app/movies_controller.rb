@@ -60,7 +60,7 @@ def can_find_using_where_clause_and_be_sorted
   #  m[title]
   #end
 
-  Movie.where(release_date>2002).order(release_date)
+  Movie.where(release_date>2002)
 
   #.map {|m| m[title]}
 end
