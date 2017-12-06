@@ -59,7 +59,7 @@ def can_find_using_where_clause_and_be_sorted
   #ActiveRecord::Base.connection.execute("SELECT title FROM movies WHERE release_date>=2002 ORDER BY release_date DESC").each do |m|
   #  m[title]
   #end
-  movie=Movie.where(release_date=2002)
+  movie=Movie.where("release_date>=2002")
   #  .map {|m| m[title]}
 end
 
